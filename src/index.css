@@ -1,0 +1,59 @@
+/* index.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.tuner-display {
+  text-align: center;
+  margin: 20px;
+}
+
+.note {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.frequency {
+  font-size: 18px;
+  color: #666;
+}
+
+.target-note {
+  font-weight: bold;
+  background-color: #e0ffe0;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.in-tune {
+  color: green;
+}
+
+.out-of-tune {
+  color: red;
+}

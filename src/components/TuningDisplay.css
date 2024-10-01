@@ -1,0 +1,260 @@
+.guitar-strings {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 300px;
+  margin: 20px 0;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.guitar-string {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+
+.note-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.highlighted-note-standard {
+  background-color: #28a745; /* Verde para la afinación estándar */
+}
+
+.highlighted-note-other {
+  background-color: #f0ad4e; /* Amarillo para las notas graves/agudas */
+}
+
+.piano-keys {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.piano-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.piano-key {
+  width: 8px;
+  height: 75px;
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+  /* Transición para todas las propiedades */
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Sombra para dar profundidad */
+  border-radius: 3px; /* Bordes redondeados */
+  margin-right: 0px;
+  writing-mode: vertical-rl;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+  line-height: 40px;
+  /* Efecto de pulsación */
+  transform: translateY(0); /* Posición inicial */
+  &:active {
+    transform: translateY(1px); /* Se hunde al presionar */
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2); /* Sombra más suave al presionar */
+  }
+}
+
+/* .piano-key {
+  width: 15px;
+  height: 100px;
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-right: 0px;
+  writing-mode: vertical-rl;
+  text-align: center;
+  line-height: 40px;
+} */
+
+/* Tecla principal verde */
+.highlighted-green {
+  background-color: #28a745; /* Verde */
+}
+
+/* Teclas adyacentes amarillas */
+.highlighted-yellow {
+  background-color: #f0ad4e; /* Amarillo */
+}
+
+/* .tuning-display-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.notes-column {
+  flex: 0 0 70%;
+  margin-right: 20px;
+}
+
+.current-note-column {
+  flex: 0 0 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.current-note-box {
+  border: 2px solid #333;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  width: 200px;
+}
+
+.current-note-box h4 {
+  margin: 0;
+  font-size: 2em;
+}
+
+.current-note-box .smaller-note {
+  font-size: 1.4em;
+  margin: 10px 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #333;
+  padding: 10px;
+  text-align: center;
+}
+
+thead {
+  background-color: #f0f0f0;
+}
+
+
+.notes-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 10px; 
+}
+
+.cuerda-1,
+.cuerda-2,
+.cuerda-3,
+.cuerda-4,
+.cuerda-5,
+.cuerda-6 {
+
+  width: 120px;
+  height: 50px;
+  margin: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.cuerda-1 {
+  background-color: #f0f0f0;
+}
+.cuerda-2 {
+  background-color: #e0e0e0;
+}
+.cuerda-3 {
+  background-color: #d0d0d0;
+}
+.cuerda-4 {
+  background-color: #c0c0c0;
+}
+.cuerda-5 {
+  background-color: #b0b0b0;
+}
+.cuerda-6 {
+  background-color: #a0a0a0;
+}
+
+.selected {
+  background-color: #99ccff;
+}
+.nota-iluminada {
+  background-color: yellow;
+} */
+
+/* .tuning-display-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-top: 20px;
+}
+
+.tuning-column {
+  text-align: center;
+}
+
+.guitar-notes {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.guitar-note {
+  padding: 10px 20px;
+  border: 1px solid #333;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.guitar-note:hover {
+  background-color: #f0f0f0;
+}
+
+.current-note-box {
+  border: 2px solid #333;
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.current-note-box h4 {
+  margin: 0;
+}
+
+.current-note-box p {
+  margin-top: 10px;
+} */
